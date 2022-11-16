@@ -1,0 +1,56 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box; /*Elem szélessége: width + padding + border*/
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:"h h"
+                        "n n"
+                        "ar as"
+                        "f f";
+    gap: 10px;
+}
+
+header, nav, article, aside, footer{
+    padding: 10px;
+}
+
+header{
+    grid-area: h;
+    font-size: xx-large;
+}
+
+nav{
+    grid-area: n;
+}
+
+article{
+    grid-area: ar;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    background-color: palevioletred;
+}
+
+aside{
+    grid-area: as;
+}
+
+footer{
+    grid-area: f;
+}
+
+li{
+    display: inline;
+}
+
+div{
+    background-color: white;
+    
+}
